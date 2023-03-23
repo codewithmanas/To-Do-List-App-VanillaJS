@@ -37,7 +37,7 @@ main {
     padding: 10px;
     font-size: 20px;
     font-weight: bold;
-    color: #262626;
+    color: #262626DD;
     box-shadow: 0px 0px 2px #93BFCF;
     width: 100%;
     border: 0;
@@ -54,18 +54,26 @@ main {
 #to-do-box li {
     position: relative;
     background-color: #93BFCF;
+    cursor: pointer;
     color: #fafafa;
     padding: 10px;
     border-radius: 2px;
     padding-right: 35px;
     text-align: justify;
     margin-top: 10px;
+    user-select: none;
 }
 
 #to-do-box li i {
     position: absolute;
     right: 10px;
     top: 10px;
+}
+
+.done {
+    text-decoration: line-through;
+    background-color: #6096B4 !important;
+    color: #0f172a !important;
 
 }
 
