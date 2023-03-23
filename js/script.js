@@ -16,5 +16,14 @@ const addToDo = (item) => {
         ${item}
         <i class="fa-solid fa-xmark"></i>
     `;
+    
+    listItem.addEventListener("click", () => {
+        listItem.classList.toggle("done");
+    })
+
+    listItem.querySelector("i").addEventListener("click", () => {
+        listItem.remove();
+    })
+
     toDoBox.appendChild(listItem);
 }
